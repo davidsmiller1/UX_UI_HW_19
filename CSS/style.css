@@ -1,0 +1,596 @@
+/* Typography */
+
+.h1Blue {
+    font: 3.75em Helvetica, sans-serif;
+    color: #1C3059;
+    font-weight: bold;
+}
+
+.h1White {
+    font: 3.75em Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.h2Blue {
+    font: 2.5em Helvetica, sans-serif;
+    color: #1C3059;
+    font-weight: 500;
+}
+
+.h2White {
+    font: 2.5em Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.h3Blue {
+    font: 1.25em Helvetica, sans-serif;
+    color: #1C3059;
+    font-weight: normal;
+}
+
+.h3White {
+    font: 1.25em Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+.h3Gray {
+    font: 1.25em Helvetica, sans-serif;
+    color: #707070;
+    font-weight: normal;
+}
+
+.h3GrayBlue {
+    font: 1.25em Helvetica, sans-serif;
+    color: #78849C;
+    font-weight: normal;
+}
+
+.h4White {
+    font: 1em Helvetica, sans-serif;
+    color: white;
+    font-weight: normal
+}
+
+/* All Buttons */
+
+.buttonBox {
+	display: block;
+	flex-wrap: wrap;
+    width: 96%;
+    height: 96%;
+	padding: 2% 2% 2% 2%;
+	text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Body */
+
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+/* Header Section */
+
+.navigationCard {
+    width: 100%;
+    height: 100px;
+    background-color: #1C3059;
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+    .logo {
+        width: auto;
+        max-width: 12em;
+        height: auto;
+        padding: 1% 1% 1% 1%;
+        float: left;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .logo img {
+            width: 100%;
+            height: 100%
+        }
+
+        .logo:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+    .buttonGroup {
+        list-style-type: none;
+        float: right !important;
+        width: auto;
+        max-width: 60%;
+        text-align: right;
+        margin-top: 17px;
+    }
+
+        .navButton {
+            display: inline-block;
+            vertical-align: top;
+            width: 100px;
+            height: 50px;
+            background-color: #1C3059;
+            color: white;
+            font: 20px Helvetica, sans-serif;
+            border: none;
+            border-radius: 8px;
+            margin: 1px 1px;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            }
+
+        .navButton:hover {
+            background-color: white;
+            color: #1C3059;
+            transform: scale(1.1, 1.1);
+        }    
+
+/* Landing Section */
+
+.landingSection {
+    width: 100%;
+    height: auto;
+}
+
+    .heroImage img {
+        margin-top: 75px;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    }
+
+/* About Section */
+
+.aboutSection {
+    overflow: hidden;
+    width: 86%;
+    margin: 0% 7% 0% 7%;
+}
+
+    .aboutColumn {
+        float: left;
+        width: 50%;
+    }
+    
+        .aobutRow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    #aboutColumnLeft {
+        padding: 0% 3% 0% 0%;
+    }
+
+    #aboutColumnRight {
+        padding: 0% 0% 0% 0%;
+    }
+
+        .aboutColumn p {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .aboutColumn img {
+            width: 90%;
+            justify-content: left;
+            align-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+        }
+
+    .aboutButtonBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+        .aboutButton {
+            width: 100%;
+            max-width: 250px;
+            background-color: white;
+            font: 20px Helvetica, sans-serif;
+            color: #1C3059;
+            border: 2px solid #1C3059;
+            border-radius: 8px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+            .aboutButton:after {
+                content: "View my resume";
+            }
+                                
+            .aboutButton:hover::after {
+                color: white;
+                content: "Learn more!";
+            }
+                        
+            .aboutButton:hover {
+                background-color: #1C3059;
+                color: white;
+                transform: scale(1.1, 1.1);
+            }
+
+/* Quote Section */
+
+.quoteSection {
+    width: 100%;
+    background-color: #1C3059;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+    .quoteCard {
+        width: 84%;
+        height: auto;
+        margin: 2% 7% 2% 7%;
+        padding: 3% 0% 0% 0%;
+        justify-content: center;
+        display: inline-block;
+    }
+
+        .quoteIcon {
+            width: 90px;
+            margin: 0 auto;
+            padding: 1% 0% 0% 0%;
+            float: left;
+        }
+
+            .quoteIcon img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        .quoteText {
+            width: 75%;
+            margin: 0 auto;
+            padding: 0% 0% 0% 3%;
+            text-align: left;
+            float: left;
+        }
+
+        .authorText {
+            margin-right: 15%;
+            text-align: left;
+            float: right;
+        }
+
+/* Services Section */
+
+.servicesSection {
+    width: 86%;
+    margin: 0% 7% 0% 7%;
+}
+
+    .servicesRow {
+        width: 100%;
+        height: 100%;
+        margin: 0 -5px;
+    }
+        
+    .servicesRow:after {
+        content: "";
+        display: table;
+        clear: both;
+        height: 100%;
+    }
+        
+        .servicesColumn {
+            float: left;
+            width: 33%;
+            height: 100%;
+            padding: 0 10px;
+        }
+
+            .servicesCard {
+                width: 100%;
+                height: auto;
+                padding: 16px;
+                text-align: center;
+                background-color: #f1f1f1;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+            }
+    
+                .servicesIcon {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .viewProjectButtonBox {
+                    height: auto;
+                }
+
+                .viewProjectButton {
+                    width: 96%;
+                    max-width: 250px;
+                    background-color: white;
+                    color: #1C3059;
+                    font: 16px Helvetica, sans-serif;
+                    border: 2px solid #1C3059;
+                    border-radius: 8px;
+                    padding: 15px 15px 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 20px; 
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+                }
+            
+                    .viewProjectButton:after {
+                        content: "View project";
+                    }
+                    
+                    .viewProjectButton:hover::after {
+                        color: white;
+                        content: "View project";
+                    }
+            
+                    .viewProjectButton:hover {
+                        background-color: #1C3059;
+                        color: white;
+                        transform: scale(1.1, 1.1);
+                    }
+
+    .servicesButtonBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+        .servicesButton {
+            width: 100%;
+            max-width: 250px;
+            background-color: white;
+            font: 20px Helvetica, sans-serif;
+            color: #1C3059;
+            border: 2px solid #1C3059;
+            border-radius: 8px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+            .servicesButton:after {
+                content: "View all projects";
+            }
+                                
+            .servicesButton:hover::after {
+                color: white;
+                content: "View all projects";
+            }
+                        
+            .servicesButton:hover {
+                background-color: #1C3059;
+                color: white;
+                transform: scale(1.1, 1.1);
+            }
+
+/* Projects Section */
+
+.projectsSection {
+    overflow: hidden;
+    width: 100%;
+    background-color: #1C3059;
+}
+
+    .projectsTitle {
+        width: 86%;
+        margin: 0% 7% 0% 7%;
+    }
+
+    .projectsColumn {
+        float: left;
+        width: 36%;
+        margin: 0% 7% 0% 7%;
+        padding: 0 10px;
+    }
+
+        .projectsRow {
+            margin: 0px -5px 40px 0px;
+        }
+        
+        .projectsRow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+            
+            .projectsColumn img {
+                padding: 1%;
+                max-width: 98%;
+                max-height: 98%;
+                cursor: pointer;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }    
+
+    .projectsButtonBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        background-color: #1C3059;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    }
+
+        .projectsButton {
+            width: 100%;
+            max-width: 250px;
+            background-color: white;
+            font: 20px Helvetica, sans-serif;
+            color: #1C3059;
+            border: 2px solid #1C3059;
+            border-radius: 8px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+            .projectsButton:after {
+                content: "Contact me";
+            }
+                                
+            .projectsButton:hover::after {
+                color: white;
+                content: "Let's work together!";
+            }
+                        
+            .projectsButton:hover {
+                background-color: #1C3059;
+                color: white;
+                transform: scale(1.1, 1.1);
+            }
+
+
+/* Contact Section */
+
+.contactTitle {
+    width: 86%;
+    margin: 0% 7% 0% 7%;
+    float: left;
+}
+
+.contactGroup {
+    width: 86%;
+    margin: 0% 7% 0% 7%;
+    display: block;
+}
+
+    .emailCard {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0px 25px 0px;
+    }
+
+        .emailIcon {
+            width: 10%;
+            float: left;
+            padding-right: 2%;
+            cursor: pointer;
+        }
+
+            .emailIcon img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        .emailText {
+            width: 40%;
+            float: left;
+            vertical-align: top;
+            padding-right: 2%;
+            cursor: pointer;
+        }
+
+            .emailText p {
+                max-width: 100%;
+                max-height: 100%;   
+            }
+
+    .linkedinCard {
+        width: 100%;
+        display: inline-block;
+        margin: 25px 0px 50px 0px;
+    }
+
+        .linkedinIcon {
+            width: 10%;
+            float: left;
+            padding-right: 2%;
+            cursor: pointer;
+        }
+
+            .linkedinIcon img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        .linkedinText {
+            width: 40%;
+            float: left;
+            margin-top: 1%;
+            padding-right: 2%;
+            cursor: pointer;
+        }
+
+            .linkedinText p {
+                max-width: 100%;
+                max-height: 100%; 
+            }
+
+/* Footer Section */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1C3059;
+}
+
+    .copyrightText {
+        text-align: center;
+        padding: 1% 0% 0% 0%;
+    }
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .aboutColumn img {
+        width: 100%;
+    }
+}             
+
+@media screen and (max-width: 1000px) {
+    .aboutColumn {
+        width: 100%;
+    }
+}            
+
+@media screen and (max-width: 750px) {
+    .servicesColumn {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .projectsColumn {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}  
